@@ -1,0 +1,30 @@
+
+    List all Last names, phone numbers and zip of the customers BOOM
+    List only those from Zip code 98002 BOOM
+    List all the customers that have no first Address entered in the database BOOM
+    List all the products that are priced higher than ten dollars BOOM
+    List all the products priced between 5 and 7 dollars
+    List all the customers whose last name starts with L
+    What is the Average price of a product
+    What is the highest price of a product
+    What is the total due for order 1003
+    Join the product and the OrderDetail table so that the result contains the product name, product unit size and product unit price as well the charged price. Do it for order 1000
+    List all the order and order details for each order made by the customer with the phone number 2065556623
+    Change the price of breadsticks to 3.00
+    Process a pizza order for a new customer (this will involve 3 insert statements)
+
+I want to see the SQL and the answer to the query. For the 12 and 13, run a SELECT query to show that the operations were successful.
+
+SELECT CustomerLastName, CustomerPhoneKey, CustomerZip FROM Customer;
+
+SELECT CustomerLastName FROM Customer 
+WHERE CustomerZip = 98002;
+
+SELECT CustomerLastName FROM Customer
+WHERE CustomerAdress1 is NULL;
+
+SELECT ProductKey FROM Product
+Where ProductUnitPrice => 10;
+
+SELECT ProductKey FROM Product
+Where ProductUnitPrice 
